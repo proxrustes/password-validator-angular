@@ -14,10 +14,10 @@ export class AppComponent {
   
   validatePassword()
   {
-
+    console.log(this.password.value)
   }
 
-  onInput(tag: string){
+  onInput(){
     console.log('input')
     this.validatePassword();
   }
