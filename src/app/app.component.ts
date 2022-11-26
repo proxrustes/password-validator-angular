@@ -9,7 +9,7 @@ import { FormControl } from '@angular/forms';
 export class AppComponent {
   title = 'password-validator';
 
-  colours: { [code: number]: string } = { 0: "dimgrey", 1:"brown", 2:"darkgoldenrod", 3:"green" }
+  colours: { [code: number]: string } = { 0: "dimgrey", 1:"#d91d0f", 2:"#f7d640", 3:"#4ae072" }
 
   firstSection = this.colours[0]
   secondSection = this.colours[0]
