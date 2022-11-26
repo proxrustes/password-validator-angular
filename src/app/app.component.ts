@@ -8,7 +8,7 @@ import { FormControl } from '@angular/forms';
 })
 export class AppComponent {
   title = 'password-validator';
-
+  show: boolean = false;
   colours: { [code: number]: string } = { 0: "dimgrey", 1:"#d91d0f", 2:"#f7d640", 3:"#4ae072" }
 
   firstSection = this.colours[0]
@@ -17,7 +17,11 @@ export class AppComponent {
 
   "password"= new FormControl('', { nonNullable: true });
   "strength"= new FormControl('enter your password', { nonNullable: true });
-  
+
+  passwordShow() {
+    this.show = !this.show;
+}
+
   validatePassword()
   {
     console.log(this.password.value)
