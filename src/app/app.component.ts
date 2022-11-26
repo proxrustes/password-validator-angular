@@ -20,7 +20,7 @@ export class AppComponent {
 
   passwordShow() {
     this.show = !this.show;
-}
+  }
 
   validatePassword()
   {
