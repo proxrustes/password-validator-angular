@@ -18,14 +18,15 @@
       <input (input)="onInput()" [formControl]="password" class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
       
       <div class="flex gap-4">
-        <div id="easy" class="inline-block bg-black h-[10px] w-full rounded-full"></div>
-        <div id="medium" class="inline-block bg-black h-[10px] w-full rounded-full"></div>
-        <div id="strong" class="inline-block bg-black h-[10px] w-full rounded-full"></div>
+        <div id="easy" [style.background-color]="firstSection" class="inline-block h-[10px] w-full rounded-full"></div>
+        <div id="medium" [style.background-color]="secondSection" class="inline-block h-[10px] w-full rounded-full"></div>
+        <div id="strong" [style.background-color]="thirdSection" class="inline-block h-[10px] w-full rounded-full"></div>
       </div>
     
     </div> 
     <h1 class="block text-center text-gray-700 text-md font-bold mt-10" for="password"> 
-      Your password is {{strength.value}}!
+   {{strength.value}}
+
     </h1>
   </div>
 </body>
